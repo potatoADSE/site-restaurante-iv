@@ -1,19 +1,32 @@
 'use client'
 
 import { useEffect, useRef } from 'react'
-import { useRouter } from 'next/navigation'
+import { usePathname } from 'next/navigation'
 
 export default function ScrollToTop() {
-  const { bfcacheId } = useRouter()
-  const previousBfcacheId = useRef(bfcacheId)
+  const pathname = usePathname()
+  const previousPathname = useRef(pathname)
+  const historyPathname = useRef(null)
 
   useEffect(() => {
-    if (previousBfcacheId.current === bfcacheId) return
-    previousBfcacheId.current = bfcacheId
+    const handlePopState = () => {
+      historyPathname.current = window.location.pathname
+    }
 
-    if (window.location.hash) return
+    window.addEventListener('popstate', handlePopState)
+    return () => window.removeEventListener('popstate', handlePopState)
+  }, [])
+
+  useEffect(() => {
+    if (previousPathname.current === pathname) return
+    previousPathname.current = pathname
+
+    const restoredPathname = historyPathname.current
+    historyPathname.current = null
+    if (restoredPathname === window.location.pathname || window.location.hash) return
+
     window.scrollTo({ top: 0, left: 0, behavior: 'instant' })
-  }, [bfcacheId])
+  }, [pathname])
 
   return null
 }
