@@ -1,0 +1,194 @@
+
+{
+  "nome": "Pérola Restaurante",
+  "telefone": "+55 84 98815-9890",
+  "whatsapp": "+55 84 98815-9890",
+  "instagram": "@perola.restaurante",
+  "endereco": {
+    "rua": "R. Erivan França, 20",
+    "bairro": "Ponta Negra",
+    "cidade": "Natal",
+    "estado": "RN",
+    "cep": "59090-100",
+    "pais": "Brasil",
+    "completo": "R. Erivan França, 20 - Ponta Negra, Natal - RN, 59090-100"
+  },
+  "tipo": "Restaurante",
+  "paginas": [
+    "home",
+    "cardapio",
+    "ambiente",
+    "sobre",
+    "reserva"
+  ],
+  "slogan": "Pérola Restaurante, sabores que combinam com o mar.",
+  "descricao": "O Pérola Restaurante, na orla de Ponta Negra, Natal – RN, oferece gastronomia local, massas, pizzas, drinques e deliciosas sobremesas à beira-mar. Um ambiente acolhedor para aproveitar bons momentos. Faça sua reserva e venha nos visitar!",
+  "identidade_visual": {
+    "logo": {
+      "arquivo": "cliente/logo.jpg",
+      "instrucoes": [
+        "Utilizar a imagem fornecida como logo oficial.",
+        "Não recriar nem substituir a logo.",
+        "Preservar suas proporções e evitar cortes."
+      ]
+    },
+    "conceito": [
+      "Rústico",
+      "Praiano",
+      "Acolhedor",
+      "Regional",
+      "Inspirado no mar"
+    ],
+    "cores": [
+      "Azul-marinho",
+      "Azul-claro",
+      "Branco",
+      "Tons de madeira natural"
+    ],
+    "elementos_sugeridos": [
+      "Ondas",
+      "Conchas",
+      "Pérolas",
+      "Texturas naturais"
+    ]
+  },
+  "cardapio": {
+    "status": "provisorio",
+    "usar_fotos": true,
+    "fonte_imagens": "Bancos de imagens gratuitos",
+    "categorias_sugeridas": [
+      "Gastronomia regional",
+      "Frutos do mar",
+      "Massas",
+      "Pizzas",
+      "Drinques e coquetéis",
+      "Sobremesas"
+    ],
+    "instrucoes": [
+      "Utilizar imagens genéricas e ilustrativas de pratos comuns na gastronomia de Natal e Ponta Negra.",
+      "Respeitar as licenças das imagens.",
+      "Não inventar preços nem apresentar pratos ilustrativos como itens confirmados do restaurante.",
+      "Deixar o cardápio preparado para substituição pelo conteúdo oficial."
+    ]
+  },
+  "google_maps": {
+    "url": "https://maps.app.goo.gl/qPXRMeaJB7h7L7U37",
+    "uso": [
+      "Botão para abrir a localização no Google Maps.",
+      "Seção de localização na página Sobre.",
+      "Referência para a futura integração com o Google Places API."
+    ],
+    "pagina_sobre": {
+      "secao": "Localização",
+      "mostrar_endereco": true,
+      "mostrar_mapa": true,
+      "botao_texto": "Ver localização no Google Maps",
+      "botao_url": "https://maps.app.goo.gl/qPXRMeaJB7h7L7U37",
+      "orientacao": "Incluir um mapa incorporado do Google Maps, se possível, e um botão que abra o link oficial fornecido. Se a incorporação exigir configuração adicional, manter o botão funcional."
+    },
+    "integracao_avaliacoes": {
+      "status": "planejada",
+      "api": "Google Places API (New)",
+      "objetivos": [
+        "Consultar a nota atual do restaurante no Google.",
+        "Consultar a quantidade atual de avaliações.",
+        "Exibir a nota e a quantidade de avaliações no site.",
+        "Permitir que os visitantes abram o perfil do restaurante no Google Maps para consultar as avaliações.",
+        "Atualizar os dados periodicamente por meio de consultas à API."
+      ],
+      "campos_desejados": [
+        "rating",
+        "userRatingCount",
+        "reviews"
+      ],
+      "requisitos_futuros": [
+        "Identificar e configurar o Place ID correto do Pérola Restaurante.",
+        "Ativar a API necessária no Google Cloud.",
+        "Configurar credenciais e faturamento conforme as regras vigentes.",
+        "Restringir as chaves de API conforme o ambiente e as recomendações do Google.",
+        "Não expor credenciais privadas no código público do site.",
+        "Implementar consultas com controle de frequência e tratamento de erros.",
+        "Exibir atribuições e links exigidos pelo Google para avaliações.",
+        "Respeitar as regras de exibição, atualização, armazenamento e atribuição dos dados.",
+        "Manter o site funcional mesmo quando a API estiver indisponível."
+      ],
+      "restricoes": [
+        "Não inventar nem simular uma nota ou quantidade de avaliações reais.",
+        "Não exibir valores estáticos como se fossem atualizados automaticamente.",
+        "Não implementar a integração antes de haver credenciais e configuração válidas.",
+        "Não armazenar avaliações fora das condições permitidas pela política do Google."
+      ]
+    }
+  },
+  "paginas_configuracao": {
+    "home": {
+      "titulo": "Pérola Restaurante",
+      "elementos": [
+        "Logo oficial",
+        "Slogan",
+        "Imagem de destaque",
+        "Descrição",
+        "Botão para cardápio",
+        "Botão para reservas",
+        "Atalho para WhatsApp",
+        "Link para Instagram",
+        "Localização",
+        "Espaço preparado para nota e quantidade de avaliações do Google"
+      ]
+    },
+    "cardapio": {
+      "titulo": "Cardápio",
+      "observacao": "Conteúdo provisório e ilustrativo, sujeito à confirmação do restaurante."
+    },
+    "ambiente": {
+      "titulo": "Nosso Ambiente",
+      "objetivo": "Apresentar o ambiente praiano e acolhedor do restaurante.",
+      "orientacao": "Priorizar fotografias reais do estabelecimento quando disponíveis."
+    },
+    "sobre": {
+      "titulo": "Sobre o Pérola",
+      "secoes": [
+        "Apresentação do restaurante",
+        "Proposta gastronômica",
+        "Localização",
+        "Mapa do Google Maps",
+        "Endereço completo",
+        "Botão para abrir no Google Maps"
+      ],
+      "observacao": "Não inventar informações sobre a história ou características não confirmadas do estabelecimento."
+    },
+    "reserva": {
+      "titulo": "Faça sua Reserva",
+      "elementos": [
+        "Botão para WhatsApp",
+        "Telefone",
+        "Endereço",
+        "Link para Instagram",
+        "Link para localização no Google Maps"
+      ],
+      "observacao": "O envio de uma mensagem não deve ser apresentado como confirmação automática da reserva."
+    }
+  },
+  "links": {
+    "whatsapp": "https://wa.me/5584988159890",
+    "instagram": "https://www.instagram.com/perola.restaurante/",
+    "google_maps": "https://maps.app.goo.gl/qPXRMeaJB7h7L7U37"
+  },
+  "requisitos_tecnicos": [
+    "Utilizar cliente/logo.jpg como logo oficial.",
+    "Criar um site responsivo para celulares e computadores.",
+    "Garantir que todos os links funcionem.",
+    "Adicionar a localização do Google Maps na página Sobre.",
+    "Preparar a interface para a futura exibição de avaliações reais do Google.",
+    "Não fingir que a integração com a API já está funcionando.",
+    "Não publicar credenciais secretas no frontend.",
+    "Não inventar informações comerciais, avaliações ou preços."
+  ],
+  "observacoes": [
+    "O cardápio é provisório.",
+    "A logo está em cliente/logo.jpg.",
+    "O link fornecido pelo cliente é a referência para a localização oficial no Google Maps.",
+    "A integração automática de avaliações será implementada futuramente.",
+    "A identidade visual descrita é uma orientação de design, não um manual oficial de marca."
+  ]
+}
