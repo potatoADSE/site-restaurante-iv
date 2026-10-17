@@ -46,7 +46,7 @@ Os textos de categoria abaixo podem ser publicados como apresentação geral. Os
 
 #### Gastronomia regional
 - **Texto da categoria — pronto para publicação:** Uma seleção inspirada na gastronomia regional de Natal e do Rio Grande do Norte.
-- **Sugestões ilustrativas — validar antes de publicar como itens:** Peixe em preparo regional; carne de sol em apresentação regional.
+- **Sugestões ilustrativas — validar antes de publicar como itens:** Carne de sol em apresentação regional; peixe em preparo regional.
 
 #### Frutos do mar
 - **Texto da categoria — pronto para publicação:** Opções de frutos do mar em sintonia com a localização à beira-mar.

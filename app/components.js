@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { ArrowUpRight, Instagram, MapPin, MessageCircle } from 'lucide-react'
+import { ArrowUpRight, MapPin } from 'lucide-react'
+import { SiInstagram, SiWhatsapp } from 'react-icons/si'
 import logo from '../cliente/logo.jpg'
 import client from '../cliente/cliente.json'
 
@@ -59,7 +60,7 @@ export function SiteFrame({ children, currentPath }) {
 }
 
 export function ContactLink({ kind, label, href, className = '' }) {
-  const Icon = kind === 'instagram' ? Instagram : kind === 'maps' ? MapPin : MessageCircle
+  const Icon = kind === 'instagram' ? SiInstagram : kind === 'whatsapp' ? SiWhatsapp : MapPin
   return (
     <a className={`action-link ${className}`} href={href} target="_blank" rel="noreferrer">
       <Icon aria-hidden="true" size={18} strokeWidth={1.8} />

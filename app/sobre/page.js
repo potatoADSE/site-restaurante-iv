@@ -9,7 +9,7 @@ export async function generateMetadata() {
 
 export default async function AboutPage() {
   const { about } = await readSiteCopy()
-  const mapUrl = 'https://maps.google.com/maps?q=-5.8813215,-35.1716003&z=16&output=embed'
+  const mapUrl = 'https://www.google.com/maps?output=embed&q=-5.8813215%2C-35.1716003&z=16'
 
   return (
     <SiteFrame currentPath="/sobre">

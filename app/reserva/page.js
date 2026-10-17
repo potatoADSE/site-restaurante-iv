@@ -18,7 +18,6 @@ export default async function ReservationPage() {
             <div className="reservation-primary">
               <p className="eyebrow">Solicitação de reserva</p>
               <h2 id="reservation-contact-title">Vamos conversar pelo WhatsApp.</h2>
-              <p>Envie sua solicitação à equipe. A reserva só estará confirmada após o retorno do restaurante.</p>
               <WhatsAppLink label="Solicitar reserva pelo WhatsApp" />
             </div>
             <div className="reservation-details">
